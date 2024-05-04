@@ -1,0 +1,11 @@
+[core]
+	autocrlf = false
+[user]
+	name = saeed-sufi
+	email = saeed.sufi@hotmail.com
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe
+[alias]
+	hist = log --oneline --graph --decorate --all
+[init]
+	defaultBranch = main
