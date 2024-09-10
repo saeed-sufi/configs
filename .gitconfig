@@ -7,5 +7,8 @@
 	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe
 [alias]
 	hist = log --oneline --graph --decorate --all
+	one = log --oneline
 [init]
 	defaultBranch = main
+[core]
+	editor = vim
