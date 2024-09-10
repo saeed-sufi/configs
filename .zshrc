@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(node npm vscode web-search git z zsh-autocomplete zsh-autosuggestions)
+plugins=(git z zsh-autocomplete zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,3 +101,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias update="sudo apt-get update && sudo apt-get -y upgrade"
 alias d="docker"
+alias dc="docker compose"
+drmc() {
+ docker rm $(docker ps -a -q)
+}
+
+export BAT_THEME="Solarized (dark)"
+
+eval "$(starship init zsh)"
+
