@@ -2,10 +2,11 @@ if vim.g.vscode then
   -- VSCode Neovim
   require "user.vscode_keymaps"
 else
-  
+
   -- =======================
   -- Auto-install packer.nvim
   -- =======================
+  -- git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
   local ensure_packer = function()
     local fn = vim.fn
     local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
@@ -61,6 +62,9 @@ else
     end
   end)
 
+require'lspconfig'.lua_ls.setup{
+  cmd = { "lua-language-server" },
+}
   vim.cmd[[colorscheme catppuccin]]
   -- Customize Line Numbers' Color
   vim.cmd [[highlight LineNr guifg=#6C6F7D]]  -- Change line number color (adjust as needed)
@@ -114,7 +118,10 @@ else
       enable = true,                -- Enable syntax highlighting
       additional_vim_regex_highlighting = false,
     },
-    ensure_installed = { 'python', 'javascript', 'html', 'css' }, -- Install parsers
+    ignore_install = { 'php', 'markdown' }, -- Skip installation for these parsers
+    sync_install = false, -- Install parsers synchronously (only applied to `ensure_installed`)
+    auto_install = true,  -- Automatically install missing parsers when entering a buffer
+    ensure_installed = { 'lua', 'python', 'javascript', 'html', 'css' }, -- Install parsers
   }
 
   -- Telescope
@@ -132,6 +139,28 @@ else
 
   -- Example: Configuring Pyright (Python LSP)
   lspconfig.pyright.setup {}
+
+  -- Example: Configuring Lua (Sumneko Lua LSP)
+lspconfig.lua_ls.setup {
+  settings = {
+  -- cmd = { "~/.local/bin/lua/" }, -- Replace with the actual path
+    Lua = {
+      runtime = {
+        version = 'LuaJIT',
+      },
+      diagnostics = {
+        globals = { 'vim' },
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file("", true),
+        checkThirdParty = false,
+      },
+      telemetry = {
+        enable = false,
+      },
+    },
+  },
+}
 
   -- Lualine (Status Line)
   require('lualine').setup {
@@ -167,4 +196,5 @@ else
 
   -- Quit
   vim.keymap.set('n', '<leader>q', ':q<CR>')
+
 end
