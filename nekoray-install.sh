@@ -6,6 +6,17 @@ NEKORAY_FILE_NAME="NekoRay"
 NEKORAY_DESKTOPFILE="$HOME/.local/share/applications/nekoray.desktop"
 WGET_TIMEOUT="15"
 
+# on Debian
+# sudo apt install build-essential \
+#                libfontconfig1 \
+#                libqt5network5 \
+#                libqt5widgets5 \
+#                libqt5x11extras5 \
+#                libqt5gui5
+# then run the following
+# wget -qO- https://raw.githubusercontent.com/ohmydevops/nekoray-installer/main/installer.sh | bash
+
+
 # Just for fun
 # Source: https://patorjk.com/software/taag/#p=display&v=1&f=ANSI%20Shadow&t=NekoRay%20Installer
 GREEN='\033[0;32m'
