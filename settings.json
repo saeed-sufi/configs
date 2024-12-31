@@ -1,0 +1,185 @@
+{
+  "workbench.colorCustomizations":  {
+    "sideBar.background": "#003441",
+    // "list.hoverBackground": "#015064",
+    "editor.background": "#002B36"
+    // "editor.background": "#f8f8f8",
+    // "statusBar.background": "#e4e2e2",
+    // "statusBar.foreground": "#292828",
+    // "editor.rangeHighlightBackground":"#384d5d46",
+    // "editor.foldBackground":"#384d5d2f",
+    // "editor.foldPlaceholderForeground":"#808080"
+  },
+  "files.autoSave": "afterDelay",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.gpuAcceleration": "on",
+  "editor.wordWrap": "on",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "php.executablePath": "C:\\Program Files\\php\\php.exe",
+  "editor.tabCompletion": "onlySnippets",
+  // "editor.formatOnPaste": true,
+  // "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "json.schemas": [],
+  "explorer.openEditors.visible": 1,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "js/ts.implicitProjectConfig.checkJs": false,
+  "editor.hover.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "editor.linkedEditing": true,
+  "beautify.language": {
+    "js": {
+      "type": [
+        "javascript",
+        "json"
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautifyrc"
+      ]
+      // "ext": ["js", "json"]
+      // ^^ to set extensions to be beautified using the javascript beautifier
+    },
+    "css": [
+      "css",
+      "scss"
+    ],
+    "html": [
+      "htm",
+      "html",
+      "php"
+    ]
+    // ^^ providing just an array sets the VS Code file type
+  },
+  "python.languageServer": "Default",
+  "liveServer.settings.donotVerifyTags": true,
+  "explorer.confirmDragAndDrop": false,
+  "jupyter.askForKernelRestart": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "update.mode": "manual",
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false,
+  "window.newWindowDimensions": "inherit",
+  "files.exclude": {
+    ".htaccess": true,
+    "license.txt": true,
+    "readme.html": true,
+    "wp-admin/": true
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "beautify.config": {
+    "html": {
+      "indent_size": 2
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "intelephense.diagnostics.undefinedClassConstants": false,
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "intelephense.diagnostics.undefinedMethods": false,
+  "intelephense.diagnostics.undefinedSymbols": false,
+  "intelephense.diagnostics.undefinedProperties": false,
+  "intelephense.diagnostics.undefinedTypes": false,
+  "intelephense.diagnostics.undefinedConstants": false,
+  "intelephense.diagnostics.unexpectedTokens": false,
+  "intelephense.diagnostics.unusedSymbols": false,
+  "vscode-edge-devtools.mirrorEdits": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "C:\\Program Files\\Git\\bin\\bash.exe (migrated)": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": []
+    }
+  },
+  "json.maxItemsComputed": 10000,
+  "cmake.configureOnOpen": true,
+  "cmake.showOptionsMovedNotification": false,
+  "vscode-edge-devtools.webhintInstallNotification": true,
+  "workbench.sideBar.location": "right",
+  "workbench.editor.enablePreview": false,
+  "csv-edit.fontSizeInPx": 14,
+  "cSpell.enabled": false,
+  "composerCompanion.enabled": true,
+  "composerCompanion.executablePath": "/usr/local/bin/composer",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.fontSize": 13,
+  "window.title": "🚀 ${dirty}${rootName} ${separator} 📂 ${activeFolderMedium}${separator}${profileName}${separator} 📄 ${activeEditorShort}",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.fixAll.eslint": "always"
+  },
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "prettier.singleQuote": true,
+  "turboConsoleLog.quote": "'",
+  "javascript.preferences.quoteStyle": "double",
+  "redhat.telemetry.enabled": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.customGlyphs": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "editor.lightbulb.enabled": "on",
+  "workbench.activityBar.location": "hidden",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.lineNumbers": "relative",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "window.commandCenter": false,
+  "workbench.colorTheme": "Default Dark+",
+"editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "storage.type.class.jsdoc",
+        "scope":
+          "storage.type.class.jsdoc,entity.name.type.instance.jsdoc,variable.other.jsdoc",
+        "settings": {
+          "foreground": "#7f848eff"
+        }
+      }
+    ]
+  },
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim-linux64/bin/nvim",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.statusBar.visible": false,
+  "window.menuBarVisibility": "toggle",
+  "workbench.editor.showTabs": "none",
+  "editor.snippetSuggestions": "bottom",
+}
