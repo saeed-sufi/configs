@@ -45,3 +45,30 @@ docker run -d \
   --restart unless-stopped \
   redis
 ```
+## Python
+- To install it:
+```
+sudo zypper install python3 python3-pip
+sudo zypper install python3-virtualenv
+```
+- Create a new env and source it:
+```
+python3 -m venv myenv
+source myenv/bin/activate
+```
+- Install jupyter and run it:
+```
+pip install jupyterlab
+jupyter-lab
+```
+- Install useful python tools:
+```
+pip install numpy pandas matplotlib seaborn scikit-learn
+```
+- Create a `.gitignore` file:
+```
+venv/
+__pycache__/
+*.pyc
+```
+
