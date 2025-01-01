@@ -1,3 +1,9 @@
+## VS Code
+- Place the `keybindings.json` and `settings.json` files inside the following path:
+  ```
+  ~/.config/Code/User/
+  ```
+
 ## Docker
 To change docker repos: 
 ```
