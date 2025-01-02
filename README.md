@@ -54,6 +54,8 @@ sudo zypper install python3-virtualenv
 - Or install it using Pyenv:
 ```
 sudo zypper install gcc make zlib-devel libffi-devel libopenssl-devel bzip2 tar xz
+sudo zypper install sqlite3 sqlite3-devel
+sudo zypper install xz-devel readline-devel tk-devel gdbm-devel ncurses-devel
 curl https://pyenv.run | bash
 ```
 and then add the following to `.zshrc`:
