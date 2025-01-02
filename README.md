@@ -51,6 +51,22 @@ docker run -d \
 sudo zypper install python3 python3-pip
 sudo zypper install python3-virtualenv
 ```
+- Or install it using Pyenv:
+```
+sudo zypper install gcc make zlib-devel libffi-devel libopenssl-devel bzip2 tar xz
+curl https://pyenv.run | bash
+```
+and then add the following to `.zshrc`:
+```
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+```
+- and then:
+```
+pyenv install 3.10.12
+pyenv global 3.10.12  # Set it as the default
+```
 - Create a new env and source it:
 ```
 python3 -m venv myenv
