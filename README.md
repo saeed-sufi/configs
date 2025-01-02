@@ -53,9 +53,8 @@ sudo zypper install python3-virtualenv
 ```
 - Or install it using Pyenv:
 ```
-sudo zypper install gcc make zlib-devel libffi-devel libopenssl-devel bzip2 tar xz
-sudo zypper install sqlite3 sqlite3-devel
-sudo zypper install xz-devel readline-devel tk-devel gdbm-devel ncurses-devel
+zypper install gcc automake bzip2 libbz2-devel xz xz-devel openssl-devel ncurses-devel \
+readline-devel zlib-devel tk-devel libffi-devel sqlite3-devel gdbm-devel make findutils patch
 curl https://pyenv.run | bash
 ```
 and then add the following to `.zshrc`:
