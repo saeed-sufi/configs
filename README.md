@@ -89,3 +89,8 @@ __pycache__/
 *.pyc
 ```
 
+## Node
+- To delete all the `node_modules` folders inside a specific directory run this:
+```
+find /path/to/your/project -name "node_modules" -type d -prune -exec rm -rf '{}' +
+```
