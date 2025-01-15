@@ -49,6 +49,12 @@ docker run -d \
 docker run -d \
  --restart unless-stopped -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 ```
+- To manage everything docker in terminal install `lazydocker` by running this:
+```
+curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+```
+and then `echo "alias lzd='lazydocker'" >> ~/.zshrc`
+
 ## Python
 - To install it:
 ```
