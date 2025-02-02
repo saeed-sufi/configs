@@ -104,3 +104,9 @@ __pycache__/
 ```
 find /path/to/your/project -name "node_modules" -type d -prune -exec rm -rf '{}' +
 ```
+- To run any `ts` file:
+```
+npm i -D tsx
+npx tsx src/index.ts
+```
+
