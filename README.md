@@ -110,7 +110,7 @@ npm i -D tsx
 npx tsx src/index.ts
 ```
 ## Terminal
-- Install [Kitty]([url](https://sw.kovidgoyal.net/kitty/binary/))
+- Install [Kitty](https://sw.kovidgoyal.net/kitty/binary/)
 - To make Kitty work with ssh terminals run the following:
 ```
 kitty +kitten ssh mdev
