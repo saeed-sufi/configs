@@ -109,4 +109,9 @@ find /path/to/your/project -name "node_modules" -type d -prune -exec rm -rf '{}'
 npm i -D tsx
 npx tsx src/index.ts
 ```
-
+## Terminal
+- Install [Kitty]([url](https://sw.kovidgoyal.net/kitty/binary/))
+- To make Kitty work with ssh terminals run the following:
+```
+kitty +kitten ssh mdev
+```
