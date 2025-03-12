@@ -113,5 +113,5 @@ npx tsx src/index.ts
 - Install [Kitty](https://sw.kovidgoyal.net/kitty/binary/)
 - To make Kitty work with ssh terminals run the following:
 ```
-kitty +kitten ssh mdev
+kitty +kitten ssh <ip address>
 ```
