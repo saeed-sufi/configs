@@ -115,3 +115,8 @@ npx tsx src/index.ts
 ```
 kitty +kitten ssh <ip address>
 ```
+## Github repos
+- To search among github repositories:
+```
+geology OR "geological modeling" OR "geoscience" language:Python
+```
