@@ -1,0 +1,38 @@
+{
+  "nativeMCPServers": [
+    
+  ],
+  "mcpServers": {
+    "filesystem": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/saeed-sufi/Projects/",
+        "/home/saeed-sufi/Practice/"
+      ],
+      "command": "npx"
+    },
+    "context7": {
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "command": "npx"
+    },
+    "redis": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-redis",
+        "redis://localhost:6379"
+      ],
+      "command": "npx"
+    },
+    "sequential-thinking": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "command": "npx"
+    }
+  }
+}
